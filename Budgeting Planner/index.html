@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budgeting Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <h1>Budgeting Planner</h1>
+    <p>Catat & Kelola Pengeluaranmu Lebih Mudah</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <form id="budgetForm">
+        <input type="text" id="category" placeholder="Kategori (contoh: Makan, Transport)" required />
+        <input type="number" id="amount" placeholder="Jumlah Pengeluaran (Rp)" required />
+        <button type="submit">Tambah</button>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Daftar Pengeluaran</h2>
+      <ul id="expenseList"></ul>
+      <div class="total">Total: <span id="totalAmount">Rp 0</span></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Budgeting Planner — by Shasa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
